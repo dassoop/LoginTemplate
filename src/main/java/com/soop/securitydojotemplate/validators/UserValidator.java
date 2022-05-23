@@ -31,7 +31,7 @@ public class UserValidator implements Validator
         }
         if (this.userRepo.existsByUsername(user.getUsername()))
         {
-            errors.rejectValue("username", "nameTaken", "That user name is already taken.");
+            errors.rejectValue("username", "Name");
         }
     }
 }
