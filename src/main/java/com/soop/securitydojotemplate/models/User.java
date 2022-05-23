@@ -14,7 +14,7 @@ import java.util.List;
 
 @Entity
 @Table(name="users")
-public class User implements UserDetails {
+public class User{
 
     @Id
     @GeneratedValue
@@ -25,14 +25,12 @@ public class User implements UserDetails {
     @Size(min=1)
     @Email
     private String email;
-    // NEW
     @Size(min=5)
     private String password;
     @Transient
     private String passwordConfirmation;
     private Date createdAt;
     private Date updatedAt;
-    public boolean active;
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "users_roles",
@@ -50,11 +48,6 @@ public class User implements UserDetails {
     }
     public String getUsername() {
         return username;
-    }
-
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
     }
 
     public void setUsername(String username) {
@@ -102,14 +95,6 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
     @PrePersist
     protected void onCreate(){
         this.createdAt = new Date();
@@ -117,30 +102,5 @@ public class User implements UserDetails {
     @PreUpdate
     protected void onUpdate(){
         this.updatedAt = new Date();
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return true;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        if(isActive() == true)
-        {
-            return true;
-        }
-        else
-            return false;
     }
 }

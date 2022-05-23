@@ -29,18 +29,6 @@ public class UserDetailsServiceImplementation implements UserDetailsService {
             throw new UsernameNotFoundException("User not found");
         }
 
-        if(user.isActive() == false)
-        {
-            try
-            {
-                throw new Exception("User is not active");
-            }
-            catch (Exception e)
-            {
-                throw new RuntimeException(e);
-            }
-        }
-
         return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), getAuthorities(user));
     }
 
