@@ -1,0 +1,11 @@
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/ServletInitializer.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/services/UserService.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/services/UserDetailsServiceImplementation.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/repositories/UserRepository.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/SecurityDojoTemplateApplication.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/controllers/MainController.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/config/WebSecurityConfig.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/models/Role.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/repositories/RoleRepository.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/validators/UserValidator.java
+/Users/lancemac/Documents/Development/IdeaProjects/SpringBoot/LoginTemplate/src/main/java/com/soop/securitydojotemplate/models/User.java

@@ -1,0 +1,11 @@
+com/soop/securitydojotemplate/ServletInitializer.class
+com/soop/securitydojotemplate/config/WebSecurityConfig.class
+com/soop/securitydojotemplate/repositories/UserRepository.class
+com/soop/securitydojotemplate/repositories/RoleRepository.class
+com/soop/securitydojotemplate/validators/UserValidator.class
+com/soop/securitydojotemplate/services/UserDetailsServiceImplementation.class
+com/soop/securitydojotemplate/models/User.class
+com/soop/securitydojotemplate/SecurityDojoTemplateApplication.class
+com/soop/securitydojotemplate/models/Role.class
+com/soop/securitydojotemplate/services/UserService.class
+com/soop/securitydojotemplate/controllers/MainController.class
