@@ -33,5 +33,9 @@ public class UserValidator implements Validator
         {
             errors.rejectValue("username", "Name");
         }
+        if (this.userRepo.existsByEmail(user.getEmail()))
+        {
+            errors.rejectValue("email", "Email");
+        }
     }
 }

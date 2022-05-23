@@ -45,8 +45,11 @@ public class MainController {
     @GetMapping(value = {"/", "/home"})
     public String home(Principal principal, Model model) {
         // 1
-        String username = principal.getName();
-        model.addAttribute("currentUser", userService.findByUsername(username));
+        String email = principal.getName();
+        model.addAttribute("currentUser", userService.findByEmail(email));
+
+//        String username = principal.getName();
+//        model.addAttribute("currentUser", userService.findByUsername(username));
         return "homePage.jsp";
     }
 

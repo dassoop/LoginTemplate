@@ -34,6 +34,10 @@
           <form:input path="username"/>
         </div>
         <div class="form-group">
+          <form:label path="email">Email</form:label>
+          <form:input type="email" path="email"/>
+        </div>
+        <div class="form-group">
           <form:label path="password">Password</form:label>
           <form:password path="password"/>
         </div>
@@ -44,6 +48,9 @@
         <input type="submit" value="Register"/>
       </form:form>
     </div>
+  </div>
+  <div class="row">
+    <a href="/login">Login</a>
   </div>
 </div>
 </body>

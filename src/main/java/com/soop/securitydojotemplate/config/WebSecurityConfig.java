@@ -36,6 +36,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/login").successHandler(myAuthenticationSuccessHandler())
+                //DELETE TO USE USERNAME WHEN LOGGING IN
+                .usernameParameter("email")
                 .permitAll()
                 .and()
                 .logout()

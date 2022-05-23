@@ -30,11 +30,18 @@ public class UserService {
     public void saveUserWithAdminRole(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         user.setRoles(roleRepository.findByName("ROLE_ADMIN"));
+        user.setActive(false);
         userRepository.save(user);
     }
 
     // 3
-    public User findByUsername(String username) {
+    public User findByUsername(String username)
+    {
         return userRepository.findByUsername(username);
+    }
+
+    public User findByEmail(String email)
+    {
+        return userRepository.findByEmail(email);
     }
 }

@@ -27,9 +27,13 @@
   <h1>Login</h1>
   <form method="POST" action="/login">
     <div class="form-group">
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username"/>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"/>
     </div>
+<%--    <div class="form-group">--%>
+<%--      <label for="username">Username</label>--%>
+<%--      <input type="text" id="username" name="username"/>--%>
+<%--    </div>--%>
     <div class="form-group">
       <label for="password">Password</label>
       <input type="password" id="password" name="password"/>
@@ -37,8 +41,10 @@
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <input type="submit" value="Login"/>
   </form>
-
     </div>
+  </div>
+  <div class="row">
+    <a href="/registration">Registration</a>
   </div>
 </div>
 </body>
